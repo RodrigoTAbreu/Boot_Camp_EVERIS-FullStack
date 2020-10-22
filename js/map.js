@@ -16,10 +16,29 @@ const  pets = [
     age: 13},
 ]
 
-/*MAP irá retornar um novo array com a mesma quantidade de elementos, que o array inicial */
+/* --->>>> MAP <<<<-----
+Varre todo o ARRAY e retorna um elemento para cada elemento do ARRAY.
+
+MAP irá retornar um novo array com a mesma quantidade de elementos, que o array inicial 
+
+podendo transformar os elementos em novo elemento
+
+*/
 
 const petName = pets.map((pet)=>{
-    return pet.type
+   return pet.age /* podemos mudar para .NAME ou .TYPE ou .AGE */
 })
 
 console.log(petName)
+
+/* --->>> FOR EACH <<<----
+Não retorna um novo array, porem intera os elementos como o MAP
+
+
+const forEachPetNames = []
+
+const forEachPetNames = pets.forEach((pet) => {
+    return forEachPetNames.push(pet.name)
+})
+console.log(forEachPetNames)
+*/
